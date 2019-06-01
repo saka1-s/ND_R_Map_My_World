@@ -1692,36 +1692,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='oak_tree'>
-        <pose frame=''>-3.40774 8.23035 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-3.40774 8.23035 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='oak_tree_0'>
-        <pose frame=''>10.3614 3.72935 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>10.3614 3.72935 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='pine_tree'>
-        <pose frame=''>11.8668 8.70821 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>11.8668 8.70821 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='postbox'>
         <pose frame=''>6.97813 -6.26434 0 0 0 -1.59124</pose>
         <scale>1 1 1</scale>
@@ -3302,68 +3272,6 @@
       </link>
       <pose frame=''>1.82935 -1.89196 0 0 -0 0</pose>
     </model>
-    <model name='oak_tree'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='branch'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Branch</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Branch</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='bark'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Bark</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Bark</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-3.40774 8.23035 0 0 -0 0</pose>
-    </model>
     <model name='postbox'>
       <static>1</static>
       <link name='link'>
@@ -4088,130 +3996,6 @@
       </link>
       <pose frame=''>0.708254 -1.9349 0 0 -0 0</pose>
     </model>
-    <model name='oak_tree_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='branch'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Branch</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Branch</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='bark'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Bark</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Bark</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>10.3614 3.72935 0 0 -0 0</pose>
-    </model>
-    <model name='pine_tree'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://pine_tree/meshes/pine_tree.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='branch'>
-          <geometry>
-            <mesh>
-              <uri>model://pine_tree/meshes/pine_tree.dae</uri>
-              <submesh>
-                <name>Branch</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://pine_tree/materials/scripts/</uri>
-              <uri>model://pine_tree/materials/textures/</uri>
-              <name>PineTree/Branch</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='bark'>
-          <geometry>
-            <mesh>
-              <uri>model://pine_tree/meshes/pine_tree.dae</uri>
-              <submesh>
-                <name>Bark</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://pine_tree/materials/scripts/</uri>
-              <uri>model://pine_tree/materials/textures/</uri>
-              <name>PineTree/Bark</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>11.8668 8.70821 0 0 -0 0</pose>
-    </model>
     <model name='fountain'>
       <static>1</static>
       <link name='link'>
@@ -4509,5 +4293,6 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.76597 -0.806038 0 0 -0 0</pose>
     </model>
-  </world>
+ <plugin filename="libcollision_map_creator.so" name="collision_map_creator"/> 
+ </world>
 </sdf>
